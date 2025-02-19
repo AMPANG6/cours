@@ -12,14 +12,12 @@
             
         
             
-            <li class="sidebar-item active ">
+            <li class="sidebar-item {{ request()->routeIs('/') ? "active" : null}}">
 
-                <a href="index.html" class='sidebar-link'>
+                <a href="{{url('/')}}" class='sidebar-link'>
                     <i data-feather="home" width="20"></i> 
                     <span>Dashboard</span>
                 </a>
-
-                
             </li>
             
         
@@ -40,54 +38,6 @@
                     
                     <li>
                         <a href="component-badge.html">Badge</a>
-                    </li>
-                    
-                    <li>
-                        <a href="component-breadcrumb.html">Breadcrumb</a>
-                    </li>
-                    
-                    <li>
-                        <a href="component-buttons.html">Buttons</a>
-                    </li>
-                    
-                    <li>
-                        <a href="component-card.html">Card</a>
-                    </li>
-                    
-                    <li>
-                        <a href="component-carousel.html">Carousel</a>
-                    </li>
-                    
-                    <li>
-                        <a href="component-dropdowns.html">Dropdowns</a>
-                    </li>
-                    
-                    <li>
-                        <a href="component-list-group.html">List Group</a>
-                    </li>
-                    
-                    <li>
-                        <a href="component-modal.html">Modal</a>
-                    </li>
-                    
-                    <li>
-                        <a href="component-navs.html">Navs</a>
-                    </li>
-                    
-                    <li>
-                        <a href="component-pagination.html">Pagination</a>
-                    </li>
-                    
-                    <li>
-                        <a href="component-progress.html">Progress</a>
-                    </li>
-                    
-                    <li>
-                        <a href="component-spinners.html">Spinners</a>
-                    </li>
-                    
-                    <li>
-                        <a href="component-tooltips.html">Tooltips</a>
                     </li>
                     
                 </ul>

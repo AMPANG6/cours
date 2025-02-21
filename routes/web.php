@@ -6,7 +6,8 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', fn () => view('dash.dashboard'))->name('dash.dahsboard');
+Route::get('/', fn () => view('dash.dashboard'))->name('dash.dashboard');
+Route::get('/user', fn () => view('dash.user'))->name('dash.user');
 
 
 Route::get('/dashboard', function () {

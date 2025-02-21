@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 Route::get('/', fn () => view('dash.dashboard'))->name('dash.dashboard');
-Route::get('/user', fn () => view('dash.user'))->name('dash.user');
+Route::get('/user', fn () => view('user'))->name('user');
 
 
 Route::get('/dashboard', function () {
@@ -18,6 +18,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+
+
+    // Route::get('/user', [ProfileController::class, 'user'])->name('user');
 });
 
 require __DIR__.'/auth.php';

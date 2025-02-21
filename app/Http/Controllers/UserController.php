@@ -2,12 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
     public function index(){
-        $user = Users::all();
-        return view('dash.user');
+        $users = User::select('name', 'level', 'phone','username' )
+        ->get();
+        // ->paginate(10);
+        return view('user',  compact('users '));
     }
 }

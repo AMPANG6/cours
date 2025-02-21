@@ -38,11 +38,11 @@
                     </li>
 
                     <li>
-                        <a href="component-badge.html">Mutation</a>
+                        <a href="{{url('/mutation')}}">Mutation</a>
                     </li>
 
                     <li>
-                        <a href="component-badge.html">Activity</a>
+                        <a href="{{url('/activation')}}">Activity</a>
                     </li>
                     
                 </ul>
@@ -51,7 +51,7 @@
             
         
             
-            <li class='sidebar-title'>Forms &amp; Tables</li>
+            <li class='sidebar-title'>Conviguration &amp; Controls</li>
             
         
             
@@ -59,22 +59,38 @@
 
                 <a href="#" class='sidebar-link'>
                     <i data-feather="file-text" width="20"></i> 
-                    <span>Form Elements</span>
+                    <span>Conviguration</span>
                 </a>
 
                 
                 <ul class="submenu ">
                     
                     <li>
-                        <a href="form-element-input.html">Input</a>
+                        <a href="form-element-input.html">Website</a>
                     </li>
                     
                     <li>
-                        <a href="form-element-input-group.html">Input Group</a>
+                        <a href="form-element-input-group.html">Treams &amp; Privacy</a>
+                    </li>
+                    
+                    <li>
+                        <a href="form-element-input-group.html">Notification</a>
+                    </li>
+                    
+                    <li>
+                        <a href="form-element-input-group.html">Popup</a>
                     </li>
                     
                 </ul>
                 
+            </li>
+
+            <li class="sidebar-item {{ request()->routeIs('/') ? "active" : null }}">
+
+                <a href="{{url('/')}}" class='sidebar-link'>
+                    <i data-feather="wifi" width="20"></i> 
+                    <span>Providers</span>
+                </a>
             </li>
             
         

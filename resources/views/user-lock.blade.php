@@ -8,6 +8,7 @@
           <th>DATE</th>
           <th>EMAIL</th>
           <th>USERNAME</th>
+          <th>NOTE</th>
           <th>ACTIONS</th>
         </tr>
       </thead>

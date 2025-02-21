@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', fn () => view('dash.dashboard'))->name('dash.dashboard');
 Route::get('/user', fn () => view('user'))->name('user');
 Route::get('/locked', fn () => view('user-lock'))->name('user-lock');
+Route::get('/mutation', fn () => view('user-mutation'))->name('user-mutation');
+Route::get('/activation', fn () => view('user-activation'))->name('user-activation');
 
 
 Route::get('/dashboard', function () {

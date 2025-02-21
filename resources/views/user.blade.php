@@ -17,18 +17,25 @@
             </tr>
           </thead>
           <tbody>
-            {{-- @foreach ( $users as $user)
+            @foreach ( $users as $user)
               <tr>
-                <td class="text-bold-500"> {{$user->name}} </td>
+                <td class="text-bold-500">  {{$user->name}} </td>
                 <td>a</td>
                 <td class="text-bold-500">a</td>
                 <td>a</td>
-                <td><a href="#">
-                  <i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a>
+                <td>
+                    {{-- <a href="#"><i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i></a> --}}
+                    <a type="button" class=" " data-bs-toggle="modal" data-bs-target="#border-less">
+                        <i class="badge-circle badge-circle-light-secondary font-medium-1" data-feather="mail"></i>
+                    </a>
                 </td>
               </tr>   
-            @endforeach --}}
-            
+            @endforeach
+              <x-modal>
+                <x-form>
+                    
+                </x-form>
+              </x-modal>
             
           </tbody>
     </x-table>

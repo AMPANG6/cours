@@ -30,11 +30,11 @@
                 <ul class="submenu ">
                     
                     <li>
-                        <a href="{{url('user')}}"  class="sidebar-item {{ request()->routeIs('/user') ? "active" : null }}">Manage</a>
+                        <a href="{{url('/user')}}"  class="sidebar-item {{ request()->routeIs('/user') ? "active" : null }}">Manage</a>
                     </li>
                     
                     <li>
-                        <a href="component-badge.html">Locked</a>
+                        <a href="{{url('/locked')}}">Locked</a>
                     </li>
 
                     <li>

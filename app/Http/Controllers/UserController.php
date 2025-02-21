@@ -11,6 +11,9 @@ class UserController extends Controller
         $users = User::select('name', 'level', 'phone','username' )
         ->get();
         // ->paginate(10);
-        return view('user',  compact('users '));
+
+        // $totalUsers = User::count();
+        return view('user',  compact('users'));
+
     }
 }
